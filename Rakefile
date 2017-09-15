@@ -1,3 +1,5 @@
+g
+g
 begin
   require 'bundler/setup'
 rescue LoadError

@@ -1,4 +1,5 @@
-$:.push File.expand_path("../lib", __FILE__)
+lib = File.expand_path("../lib", __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 # Maintain your gem's version:
 require "arrow-activerecord/version"
@@ -6,7 +7,7 @@ require "arrow-activerecord/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "red-arrow-activerecord"
-  s.version     = ArrowActiverecord::VERSION
+  s.version     = ArrowActiveRecord::VERSION
   s.authors     = ["hatappi"]
   s.email       = ["hatappi@hatappi.me"]
   s.homepage    = "https://github.com/red-data-tools/red-arrow-activerecord"
