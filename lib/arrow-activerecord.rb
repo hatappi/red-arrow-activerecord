@@ -1,6 +1,6 @@
-require "arrow-activerecord/active_record_ex"
-
 puts "Fdsaffasdfafafasdfdsafsafasf"
+
+require "arrow-activerecord/active_record_ex"
 
 module ArrowActiveRecord
   # Your code goes here...

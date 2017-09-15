@@ -16,6 +16,10 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files += [".yardopts"]
+  s.files += Dir.glob("lib/**/*.rb")
+  s.files += Dir.glob("doc/text/*")
+  s.require_paths = ["lib"]
 
   s.add_dependency "rails", "~> 5.1.4"
 
