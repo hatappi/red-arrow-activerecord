@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency "rails", "~> 5.1.4"
+  s.add_dependency "red-arrow"
 
   s.add_development_dependency "mysql2"
 end
