@@ -38,7 +38,7 @@ module ArrowActiveRecord
           elsif type == :float
             Arrow::FloatArray.new(column_records[idx])
           else
-            Arrow::StringArray.new(column_records[idx].map(&:to_s))
+            Arrow::StringArray.new(column_records[idx])
           end
         end
       end
